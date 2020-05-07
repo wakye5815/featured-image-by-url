@@ -54,6 +54,7 @@ class Featured_Image_By_URL{
 
 			self::$instance->includes();
 			self::$instance->admin  = new Featured_Image_By_URL_Admin();
+			self::$instance->api  = new Featured_Image_By_URL_Api();
 			self::$instance->common = new Featured_Image_By_URL_Common();
 
 		}
@@ -136,6 +137,7 @@ class Featured_Image_By_URL{
 	 */
 	private function includes() {
 		require_once KNAWATFIBU_PLUGIN_DIR . 'includes/class-featured-image-by-url-admin.php';
+		require_once KNAWATFIBU_PLUGIN_DIR . 'includes/class-featured-image-by-url-api.php';
 		require_once KNAWATFIBU_PLUGIN_DIR . 'includes/class-featured-image-by-url-common.php';
 	}
 
